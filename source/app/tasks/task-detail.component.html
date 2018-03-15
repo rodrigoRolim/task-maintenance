@@ -1,0 +1,34 @@
+<div class="container">
+
+    <h2>Salvar tarefa</h2>
+    <form #tarefaForm="ngForm" novalidate (ngSubmit)="onSubmit()">
+        <div [ngClass]=" getFormGroupClass(tarefa.valid, tarefa.pristine)">
+            <label for="tarefa" class="form-control-label">Tarefa</label>
+            <input type="text" class="form-control form-control-danger"
+             placeholder="digite a tarefa" 
+             name="tarefa"
+             [ngClass]=" getFormControlClass(tarefa.valid, tarefa.pristine)"
+            #tarefa="ngModel"
+            [(ngModel)]="task.tarefa"
+           required >
+            <div class="form-control-feedback" [hidden]="tarefa.valid || tarefa.pristine">Este campo é obrigatório</div>
+        </div>
+        <div class="form-group">
+            <label for="descricao">Descricao</label>
+            <textarea name="descricao" id="desecricao" cols="30" rows="3" style="resize:none;"  class="form-control"
+                [(ngModel)]="task.descricao"
+            ></textarea>
+        </div>
+        <div [ngClass]=" getFormGroupClass(data.valid, data.pristine)">
+            <label for="tarefa">Data</label>
+            <input type="text" [ngClass]=" getFormControlClass(data.valid, data.pristine)" name="data"
+            [(ngModel)]="task.data"
+            #data="ngModel"
+            required>
+            <div class="form-control-feedback" [hidden]="data.valid || data.pristine">Este campo é obrigatório</div>
+        </div>
+        <button type="submit" class="btn btn-success" [disabled]="!tarefaForm.form.valid">Salvar</button>
+        <a class="btn btn-secondary" (click)="goBack()">voltar</a>
+    </form>
+ 
+</div>
