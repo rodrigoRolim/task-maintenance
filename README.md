@@ -12,4 +12,4 @@ trabalho da disciplina de manutenção de software - UTFPR
 * `npm install` into the projetc's command line
 ## executing the project
 > To execute the project, try this commands bellows:
- * `ng serve`, see the angular documentation: [angular doc](https://angular.io/)
+ * `npm start`, see the angular documentation: [angular doc](https://angular.io/)
