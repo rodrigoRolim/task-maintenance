@@ -3,8 +3,9 @@
 trabalho da disciplina de manutenção de software - UTFPR
 ## prerequisites
  > firstly, you should have this follows prerequisites attended:
-  1. you will need to install node.js in latest version 
-  2. you will need to install angular in latest version, see the angular documentation: [angular doc](https://angular.io/)
+  1. install node.js in latest version 
+  2. install lite-server
+  3. and install typescript
 ## get started
 > secondly, you have to execute this commands bellows:
 * `git clone https://github.com/rodrigoRolim/task-maintenance.git` for create local repository copy
@@ -13,4 +14,4 @@ trabalho da disciplina de manutenção de software - UTFPR
 * `npm install -g typescript`
 ## executing the project
 > To execute the project, try this commands bellows:
- * `npm start`, see the angular documentation: [angular doc](https://angular.io/)
+ * `npm start`
