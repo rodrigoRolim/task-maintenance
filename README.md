@@ -7,9 +7,10 @@ trabalho da disciplina de manutenção de software - UTFPR
   2. you will need to install angular in latest version, see the angular documentation: [angular doc](https://angular.io/)
 ## get started
 > secondly, you have to execute this commands bellows:
-* `git clone https://github.com/rodrigoRolim/task-maintenance.git` for create local repository copy 
-* `npm install -g @angular/cli` for installation of the angular with CLI
-* `npm install` into the projetc's command line
+* `git clone https://github.com/rodrigoRolim/task-maintenance.git` for create local repository copy
+* `npm install`
+* `npm install -g lite-server`
+* `npm install -g typescript`
 ## executing the project
 > To execute the project, try this commands bellows:
  * `npm start`, see the angular documentation: [angular doc](https://angular.io/)
